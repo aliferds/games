@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  caret-color: transparent;
+}
+
+table {
+  width: 300px;
+  height: 300px;
+  border-collapse: collapse;
+}
+table thead th {
+  text-align: left;
+}
+tr {
+  width: 300px;
+  height: 100px;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.gameboard {
+  margin: 20px 0;
+}
+
+.text-green {
+  color: #5AFF5A;
+}
+
+.text-red {
+  color: #FF5a5a;
+}
+
+.text-blue {
+  color: #5a5aFF;
+}
+
+.winner {
+  background-color: #5aFF5a;
+}
+
+.statics {
+  padding-right: 40px;
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+}
+
+.border-bottom {
+  border-bottom: 5px solid black;
+}
+
+.border-right {
+  border-right: 5px solid black;
+}
+
+td {
+  font-size: 40px;
+}
+
+button[name=reset] {
+  background-color: #FCFC5a;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 10px 1rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+
+
+button[name=reset]:hover {
+  background-color: #E9E957;
+}
+
+button[name=showStats] {
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #54FCFC;
+  padding: 10px 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+button[name=showStats]:hover {
+  background-color: #57E9E9;
+}
+.hidde {
+  display: none;
+}

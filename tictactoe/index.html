@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tic Tac Toe</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <main>
+      <div class="tictactoe">
+        <h1>Tic Tac Toe</h1>
+        <table class="gameboard">
+          <thead>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border-bottom border-right" id="1"></td>
+              <td class="border-bottom border-right" id="2"></td>
+              <td class="border-bottom" id="3"></td>
+            </tr>
+            <tr>
+              <td class="border-bottom border-right" id="4"></td>
+              <td class="border-bottom border-right" id="5"></td>
+              <td class="border-bottom" id="6"></td>
+            </tr>
+            <tr>
+              <td class="border-right" id="7"></td>
+              <td class="border-right" id="8"></td>
+              <td id="9"></td>
+            </tr>
+          </tbody>
+        </table>
+        <button name="reset">resetar</button>
+        <button class="showStats" name="showStats">Statistics</button>
+        <div class="stats hidde">
+          <div  class="statics">
+            <span class="bold">
+              P1
+            </span>
+            <div><span class="text-green">wins</span>: <span id="p1wins"></span></div>
+            <div><span class="text-red">loses</span>: <span id="p1loses"></span></div>
+          </div>
+          <div  class="statics">
+            <span class="bold">
+              P2
+            </span>
+            <div><span class="text-green">wins</span>: <span id="p2wins"></span></div>
+            <div><span class="text-red">loses</span>: <span id="p2loses"></span></div>
+          </div>
+          <div  class="statics">
+            <span class="bold">
+              Bot
+            </span>
+            <div><span class="text-green">wins</span>: <span id="botwins"></span></div>
+            <div><span class="text-red">loses</span>: <span id="botloses"></span></div>
+          </div>
+          <div  class="statics">
+            <span class="bold">
+              Ties
+            </span>
+            <div>2 Players: <span id="draws2p"></span></div>
+            <div>with bot: <span id="drawsboot"></span></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <script src="./scripts.js"></script>
+  </body>
+</html>
